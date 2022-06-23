@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Caso MVM</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<form class="main-form" id="formulario">
+			<img class="img" src="img/ejer.png" />
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo concreto"
+				id="concreto"
+				required
+			/>
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo acero"
+				id="acero"
+				required
+			/>
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo excavacion"
+				id="excavacion"
+				required
+			/>
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo relleno"
+				id="relleno"
+				required
+			/>
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo parrilla"
+				id="parrilla"
+				required
+			/>
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo cal"
+				id="cal"
+				required
+			/>
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo cemento"
+				id="cemento"
+				required
+			/>
+			<input
+				class="form-input"
+				type="number"
+				placeholder="Ingresar costo pilote"
+				id="pilote"
+				required
+			/>
+			<button onclick="mostrarResultado();" type="submit" id="calcular">
+				Calcular
+			</button>
+		</form>
+		<p id="result">
+			<span id="resultado"></span>
+		</p>
+		<script src="main.js"></script>
+	</body>
+</html>
