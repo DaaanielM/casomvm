@@ -1,9 +1,9 @@
 const formulario = document.querySelector('#formulario');
 
-//Evento
+//Evento, para cuando demos al boton calcular, haga el procedimiento de la función
 formulario.addEventListener('submit', validarFormulario);
 
-//Función
+//Función donde se hará el procedimiento de calcular
 function validarFormulario(e) {
 	e.preventDefault(); // Para que la  página web no se actualice después del submit
 	const concreto = parseFloat(document.getElementById('concreto').value); // para obtener el valor de entrada en JavaScript
@@ -29,13 +29,15 @@ function validarFormulario(e) {
 	// Multiplicamos el total de los materiales * la cantidad de edificios
 	const totalCostos = costos * 147;
 
+	// Mostramos el resultado
 	const resultado = document.getElementById('resultado');
 	resultado.textContent = `El costo estimado es: ${totalCostos}`;
 
+	// reseteamos el form
 	formulario.reset();
 }
 
-// Mostramos en la página el resultado
+// Mostramos el css del resultado
 function mostrarResultado() {
 	document.getElementById('result').style.display = 'flex';
 }
