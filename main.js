@@ -26,7 +26,7 @@ function validarFormulario(e) {
 		cemento +
 		pilote;
 
-	// Multiplicamos el total de los materiales * la cantidad de edificios
+	// Multiplicamos el total de los materiales * la cantidad de torres
 	const totalCostos = costos * 147;
 
 	// Mostramos el resultado
